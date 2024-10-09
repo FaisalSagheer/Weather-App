@@ -15,14 +15,12 @@ async function city() {
         const cardTitle = document.getElementById('title');
         const cardTemp = document.getElementById('temperature');
         const tempData = data.main.temp;
-        cardTemp.textContent = `${(tempData - 273.15).toFixed(1)}C`;
+        cardTemp.textContent = `${(tempData - 273.15).toFixed()} C`;
         cardTitle.textContent = data.weather[0].description;
         // console.log(data)
     }
     catch (error) {
         const cardTitle = document.getElementById('title')
-        const cardTemp = document.getElementById('temperature')
-        cardTitle.textContent = "Error"
-        cardTemp.textContent = error.message
+        cardTitle.textContent = error.message
     }
 }
