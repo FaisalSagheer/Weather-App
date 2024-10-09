@@ -21,6 +21,8 @@ async function city() {
     }
     catch (error) {
         const cardTitle = document.getElementById('title')
+        const cardTemp = document.getElementById('temperature')
         cardTitle.textContent = error.message
+        cardTemp.textContent = ""
     }
 }
