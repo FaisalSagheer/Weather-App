@@ -1,4 +1,3 @@
-//  pokemon()
 
 const apiKey = 'e68750d3d1690cae3a5e77daf9e25f72'
 async function city() {
